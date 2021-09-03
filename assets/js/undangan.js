@@ -26,6 +26,9 @@ function tutupload() {
 	$('#mess-internet').hide()
 }
 
+$.getJSON('http://45.118.114.201/simpus/index.php/mp/c_menu/stream', (data) => {
+	console.log(data);
+})
 
 $('#mess-internet').hide()
 
@@ -37,8 +40,6 @@ $(window).on('load', function () {
 	$('.pause').hide();
 	$('.off-sound').hide();
 	offsound();
-
-
 
 
 	$('#live-frame').hide();
